@@ -115,7 +115,29 @@ public class BasePage {
 				
 				
 		}
-			}
+	}
+	public String getText(String locator) {
+			
+			
+			if(locator.endsWith("_XPATH")) {
+				
+				locator=driver.findElement(By.xpath(SeleniumDriver.OR.getProperty(locator))).getText();
+			
+			}else if(locator.endsWith("_ID")) {
+					
+				locator=driver.findElement(By.id(SeleniumDriver.OR.getProperty(locator))).getText();
+			
+			}else if(locator.endsWith("_CSS")) {
+					
+				locator=driver.findElement(By.cssSelector(SeleniumDriver.OR.getProperty(locator))).getText();
+			 
+				
+			}else if(locator.endsWith("_LINK")) {
+					
+				locator=driver.findElement(By.linkText(SeleniumDriver.OR.getProperty(locator))).getText();
+			}	
+			return locator;
+		}
 		
 		
 }
