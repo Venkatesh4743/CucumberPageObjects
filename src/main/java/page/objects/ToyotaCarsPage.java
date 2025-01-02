@@ -7,7 +7,7 @@ public class ToyotaCarsPage extends BasePage{
 	
 	public String getCarTitle() {
 		
-		return getText("cartitle_XPATH");
+		return getText("carTitle_XPATH");
 		
 	}
 }

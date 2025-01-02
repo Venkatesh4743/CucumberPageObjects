@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-01T17:34:47 IST" name="Default suite" finished-at="2025-01-01T17:36:11 IST" duration-ms="83280">
+  <suite started-at="2025-01-02T19:39:58 IST" name="Default suite" finished-at="2025-01-02T19:44:34 IST" duration-ms="276299">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke@57250572]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-01-01T17:34:47 IST" name="Default test" finished-at="2025-01-01T17:36:11 IST" duration-ms="83280">
+    <test started-at="2025-01-02T19:39:58 IST" name="Default test" finished-at="2025-01-02T19:44:34 IST" duration-ms="276299">
       <class name="runner.RunCuke">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunCuke@57250572]" started-at="2025-01-01T17:34:48 IST" name="setUpClass" finished-at="2025-01-01T17:34:48 IST" duration-ms="760" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunCuke@57250572]" started-at="2025-01-02T19:39:58 IST" name="setUpClass" finished-at="2025-01-02T19:39:59 IST" duration-ms="773" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1e3f0aea]]>
+                <![CDATA[org.testng.TestRunner@591f6f83]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke@57250572]" started-at="2025-01-01T17:34:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-01T17:36:10 IST" duration-ms="82077" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke@57250572]" started-at="2025-01-02T19:39:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-02T19:41:22 IST" duration-ms="83179" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,98 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunCuke@57250572]" started-at="2025-01-01T17:36:10 IST" name="tearDownClass" finished-at="2025-01-01T17:36:11 IST" duration-ms="365" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke@57250572]" started-at="2025-01-02T19:41:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-02T19:42:29 IST" duration-ms="67241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Finding new cars"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Searching new cars"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke@57250572]" started-at="2025-01-02T19:42:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-02T19:43:26 IST" duration-ms="56641" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Finding new cars"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Searching new cars"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Honda"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.2', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe721f1013c062e8ae7f047666bc6179, findElement {value=Honda, using=link text}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/d0/583tddn56b1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58358}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58358/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe721f1013c062e8ae7f047666bc6179]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Honda"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.2', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe721f1013c062e8ae7f047666bc6179, findElement {value=Honda, using=link text}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: /var/folders/d0/583tddn56b1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58358}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58358/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe721f1013c062e8ae7f047666bc6179
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at pages.base.BasePage.click(BasePage.java:63)
+at page.objects.NewCarsPage.gotoHonda(NewCarsPage.java:27)
+at steps.CarWaleSteps.user_clicks_on_car(CarWaleSteps.java:50)
+at ✽.user clicks on "Honda" car(file:///Users/venkateshyr/git/repository/CucumberPageObjectsSelenium/src/test/resources/features/findnewcar.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCuke@57250572]" started-at="2025-01-02T19:43:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-02T19:44:34 IST" duration-ms="67754" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Finding new cars"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Searching new cars"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunCuke@57250572]" started-at="2025-01-02T19:44:34 IST" name="tearDownClass" finished-at="2025-01-02T19:44:34 IST" duration-ms="602" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

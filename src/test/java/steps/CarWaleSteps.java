@@ -37,17 +37,29 @@ public class CarWaleSteps {
 		
 	    
 	}
-	@And("user clicks on Toyota car")
-	public void user_clicks_on_toyota_car() {
+	@And("user clicks on {string} car")
+	public void user_clicks_on_car(String carBrand) {
+		
+	if(carBrand.equals("Toyota")) {
 		car.gotoToyota();
 	    
-	}
-	@And("user validates carTitle as Toyota cars")
-	public void user_validates_car_title_as_toyota_cars() {
+}else if(carBrand.equals("Kia")) {
+		car.gotoKia();
+	
+}else if(carBrand.equals("Honda")) {
+		car.gotoHonda();
+   
+}else if(carBrand.equals("BMW"))
+		car.gotoBMW();
+}
+   
+	@And("user validates carTitle as {string}")
+	public void user_validates_car_title(String carTitle) {
 	   
-		Assert.assertTrue(toyota.getCarTitle().equals("Toyota Cars"));
+		System.out.println("Car Title is : "+toyota.getCarTitle());
+		Assert.assertTrue(toyota.getCarTitle().equals(carTitle));
 		try {
-			Thread.sleep(10000);
+			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
